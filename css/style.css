@@ -54,20 +54,19 @@ header{
 
 /* 헤더 위 시작 */
 #header_top{
-  width: 1920px;
+  width: 100%;
   height: 100px;
   background-color: #000000;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
+
+
 /* 헤더 위 첫번째 */
 .top_first{
-  width: 120px;
-  height: 100px;
   float: left;
 }
-.top_first>a{
-  display: block;
-}
+
 .top_first>a>i{
   color: #ffffff;
   margin-left: 5px;
@@ -82,30 +81,27 @@ header{
 }
 /* 헤더 위 두번째 */
 .top_second{
-  width: 200px;
-  height: 100px;
   float: left;
-  margin-left: 740px;
+  margin-left: 6.5%;
 }
 .top_second h1>span{
   display: none;
 }
-.top_second a{
+/* .top_second a{
   display: inline-block;
-  margin: 20px 0 0 30px;
-}
+} */
 .top_second a>img{
   width: 140px;
   height: 60px;
+  margin-top: 20px;
+  margin-left: 80px;
 }
 /* 헤더 위 세번째 */
 .top_third{
-  width: 300px;
-  height: 100px;
   float: right;
 }
 .top_play{
-  width: 300px;
+  width: 250px;
   height: 100px;
   cursor: pointer;
   background: url(../img/start.png) no-repeat;
@@ -120,13 +116,12 @@ header{
 }
 /* lnb 시작 */
 #header_bottom{
-  width: 1920px;
+  width: 100%;
   height: 60px;
   background-color: #222222;
-  margin: 0 auto;
 }
 .header_lnb_wrap{
-  width: 1150px;
+  width: 1440px;
   height: 60px;
   margin: 0 auto;
 }
@@ -144,7 +139,7 @@ header{
 
 /* dep1 위치조정 */
 .dep1:first-child{
-  margin-left: 70px;
+  margin-left: 160px;
 }
 
 /* dep1 오른쪽 세모 */
@@ -201,7 +196,7 @@ section{
 }
 
 #main_banner{
-  width: 1920px;
+  width: 100vw;
   height: 930px;
   margin: 0 auto;
   background:url(../img/main_banner2.png) no-repeat center;
@@ -209,7 +204,7 @@ section{
 }
 
 #main_banner_text{
-  width: 1920px;
+  width: 100vw;
   height: 370px;
   margin: 0 auto;
   position: absolute;
@@ -392,7 +387,7 @@ section{
 
 /* 스몰배너 */
 #main_small_banner{
-  width: 1920px;
+  width: 1440px;
   height: 600px;
   margin: 0 auto;
   background-color: brown;
@@ -401,12 +396,12 @@ section{
 }
 /* 배너이미지 */
 #main_small_banner a img{
-  width: 90%;
-  margin-left: 85px;
+  width: 100%;
   position: absolute;
   top: 470px;
   left: 0;
   z-index: 99999;
+  margin: 0 auto;
 }
 /* 텍스트 애니메이트 영역 */
 #text_ani{
@@ -465,7 +460,7 @@ section{
 
 }
 .main_content{
-  width: 1920px;
+  width: 1440px;
   height: 1150px;
   margin: 0 auto;
 }
@@ -477,24 +472,22 @@ section{
   text-align: center;
   letter-spacing: -3px;
 }
-
 .main_content>p>i{
   cursor: pointer;
 }
-
 .main_content>p>i:hover{
   color: #ff9900;
   transition: all 0.3s;
 }
 /* 메인 박스 시작 */
 .main_box_wrap{
-  width: 1730px;
+  width: 1440px;
   height: 700px;
   margin: 0 auto;
   margin-top: 50px;
 }
 .main_box{
-  width: 530px;
+  width: 430px;
   height: 680px;
   float: left;
   margin-right: 30px;
@@ -517,16 +510,16 @@ section{
 
 /* 박스 이미지 */
 .main_box_img{
-  width: 530px;
+  width: 430px;
   height: 300px;
 }
 .main_box_img>img{
-  width: 530px;
+  width: 430px;
   height: 300px;
 }
 /* 박스 텍스트 */
 .main_box_text{
-  width: 530px;
+  width: 430px;
   height: 380px;
   background: url(../img/main_box_bg.png) no-repeat;
   background-size: cover;
@@ -598,7 +591,7 @@ section{
 
 /* 메인 2 시작 */
 .main_content2{
-  width: 1920px;
+  width: 1440px;
   height: 950px;
   margin: 0 auto;
 }
@@ -620,14 +613,14 @@ section{
 }
 /* 메인박스 2시작 */
 .main_box_wrap2{
-    width: 1730px;
+    width: 1440px;
     height: 800px;
     margin: 0 auto;
     margin-top: 50px;
 }
 
 .main_box2{
-  width: 750px;
+  width: 620px;
   height: 800px;
   float: left;
   margin-right: 50px;
@@ -650,23 +643,23 @@ section{
 
 /* 박스 이미지 */
 .main_box2_img{
-  width: 750px;
+  width: 620px;
   height: 450px;
 }
 .main_box2_img>img{
-  width: 750px;
+  width: 620px;
   height: 450px;
 }
 /* 박스 텍스트 */
 .main_box2_text{
-  width: 750px;
+  width: 620px;
   height: 350px;
   background: url(../img/main2_box_bg.png) no-repeat;
   background-size: cover;
   position: relative;
 }
 .mbox2_text{
-  width: 700px;
+  width: 620px;
   height: 300px;
   position: absolute;
   top: 65px;
@@ -747,7 +740,7 @@ footer{
 }
 
 #footer_wrap{
-  width: 1720px;
+  width: 1440px;
   height: 500px;
   margin: 0 auto;
 }
